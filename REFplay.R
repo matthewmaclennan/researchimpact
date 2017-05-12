@@ -70,3 +70,17 @@ bind_tf_idf(bigram, line, n) %>%
 arrange(desc(tf_idf))
 
 bigram_tf_idf
+
+#Create igraph object with bigrams appearing more than 500 times across all REFs
+bigram_graph <- bigram_counts %>%
+   filter(n > 500) %>%
+   graph_from_data_frame()
+bigram_graph
+
+#Plot this
+library(ggraph)
+set.seed(2017)
+ggraph(bigram_graph, layout = "fr") +
+   geom_edge_link() +
+   geom_node_point() +
+   geom_node_text(aes(label = name), vjust = 1, hjust = 1)
