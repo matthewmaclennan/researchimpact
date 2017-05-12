@@ -62,3 +62,10 @@ REFdf4grams<- REFdf %>%
    count(word1, word2, word3, word4, sort = TRUE)
 
 REFdf4grams
+
+bigram_tf_idf <- bigrams_united %>%
+count(line,bigram) %>%
+bind_tf_idf(bigram, line, n) %>%
+arrange(desc(tf_idf))
+
+bigram_tf_idf
