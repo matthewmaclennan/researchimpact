@@ -63,6 +63,7 @@ REFdf4grams<- REFdf %>%
 
 REFdf4grams
 
+#tf-idf is the frequency of a term adjusted for how rarely it is used.
 bigram_tf_idf <- bigrams_united %>%
 count(line,bigram) %>%
 bind_tf_idf(bigram, line, n) %>%
