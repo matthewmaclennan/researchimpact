@@ -16,3 +16,7 @@ REFdftw<-left_join(REFdftw,REFdftwt)
 
 REFdftw<-bind_tf_idf(REFdftw,line,word,n)
 
+REFdftw %>%
+ select(-total) %>%
+ arrange(desc(tf_idf))
+
