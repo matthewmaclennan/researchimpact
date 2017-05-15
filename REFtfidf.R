@@ -1,5 +1,6 @@
 REFdf<-data_frame(line=1:length(REFimpactSentence),text=unlist(REFimpactSentence))
 
+tfidf<-function(REFdf){
 REFdft<- REFdf %>%
  unnest_tokens(word, text) %>%
    anti_join(stop_words)
@@ -20,3 +21,4 @@ REFdftw %>%
  select(-total) %>%
  arrange(desc(tf_idf))
 
+}
