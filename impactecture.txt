@@ -1,0 +1,45 @@
+BsOK
+. PMBOK
+. BABOK
+. L6s
+. Agile
+
+Occupations
+. NOC
+
+Individual assessment
+. StrengthsFinder
+. Myers-Briggs
+. 5Factor Model
+
+Group assessment
+. 
+
+Governance
+. 
+. 
+
+BOK --> id the components, connections and interactions of a specific process
+Classifications --> Delineating the different types of things under a topic
+Assessment --> Method of measuring a quality in a thing or process, mediated by a framework
+
+Impact is a difference in q(A) due to a(B) as judged by fC.
+q(A) = Quality of A
+a(B,A) = Action of B on A
+fC( ) = Framework of C
+t1 = time point 1
+t2 = time point 2
+
+Essentially -->
+fC( )
+A
+B
+a( )
+t
+
+fC[a(B,A)]_t1 = q(A)_t1
+fC[a(B,A)]_t2 = q(A)_t2
+IF {q(A)_t2  -  q(A)_t1  =/=  0} THEN {Probability of Impact is high}
+
+Time dependence needs to be assessed: If the d(a(B,A))/dt is too large, then t2-t1 overlooks important dynamics. 
+Especially since research has a long gestation period relative to the actions and exigencies of society.
