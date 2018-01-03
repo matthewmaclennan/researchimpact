@@ -36,10 +36,11 @@ A
 B
 a( )
 t
-
+Sampling plan to determine t points
 fC[a(B,A)]_t1 = q(A)_t1
 fC[a(B,A)]_t2 = q(A)_t2
 IF {q(A)_t2  -  q(A)_t1  =/=  0} THEN {Probability of Impact is high}
 
 Time dependence needs to be assessed: If the d(a(B,A))/dt is too large, then t2-t1 overlooks important dynamics. 
-Especially since research has a long gestation period relative to the actions and exigencies of society.
+Especially since research has a long gestation period relative to the actions and exigencies of society. If the "ease of analysis" 
+is high, then the object can be analyzed at a high frequency.
